@@ -65,10 +65,12 @@ h5 {
   padding-bottom: 0.4em;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .footer > a {
   display: flex;
   align-items: center;
+  text-align: center;
   font-family: "Montserrat";
 }
 .footer a i {
@@ -81,5 +83,11 @@ h5 {
 }
 .footer > a:nth-child(2):hover {
   color: rgb(100, 65, 164);
+}
+@media only screen and (max-width: 596px) {
+  .footer{
+    justify-content: center;
+  }
+  
 }
 </style>
