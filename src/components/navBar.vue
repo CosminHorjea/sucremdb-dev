@@ -2,10 +2,11 @@
     <nav>
       
         <ul>
-          <span><a href="#/"><img src="../assets/logoS.png" alt="" width="60px" height="45px"></a></span>
+          <span><a href="/"><img src="../assets/logoS.png" alt="" width="60px" height="45px"></a></span>
           <div>
             <router-link to="/reveuri"><li>Reveuri</li></router-link>
             <router-link to="/live"><li>live <i v-if="isLive" class="fas fa-circle">&nbsp;</i></li></router-link>
+            <!-- <router-link to="/topuri"><li>topuri</li></router-link> -->
           </div>
         </ul>
     </nav>

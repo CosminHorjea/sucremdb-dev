@@ -8,11 +8,13 @@ import welcome from '@/components/welcome'
 import NavBar from '@/components/navBar'
 import list from '@/components/list'
 import live from '@/components/live'
+import topuri from '@/components/topuri'
 
 
 Vue.use(Router)
 
 export default new Router({
+  mode:'history',
   routes: [{
       path: '/',
       name: 'reviews',
@@ -43,6 +45,11 @@ export default new Router({
       name: 'livePage',
       component: live
     },
+    {
+      path:'/topuri',
+      name:'topuri',
+      component:topuri
+    }
     //do live path
   ]
 })

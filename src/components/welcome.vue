@@ -11,8 +11,9 @@
     <br><br>
     <footer>
       <div class="footer">
-        <a href="https://www.instagram.com/superomul/" target="_blank"><i class="fab fa-instagram"></i>instagram.com/superomul</a>
+        <a href="https://www.youtube.com/lumealuisucre/" target="_blank"><i class="fab fa-youtube"></i>youtube.com/lumealuisucre</a>
         <a href="https://www.twitch.tv/lumealuisucre" target="_blank">twitch.tv/lumealuisucre<i class="fab fa-twitch"></i></a>
+        <a href="https://discord.gg/xCCv8Wq" target="_blank">discord.gg/LumeaLuiSucre<i class="fab fa-discord"></i></a>
       </div>
     </footer>
   </div>
@@ -36,6 +37,7 @@ export default {
         .then(res => res.json())
         .then(res => {
           this.lastVideo = res.items[0].contentDetails.videoId;
+          console.log(this.lastVideo)
         });
     }
   }
@@ -79,11 +81,17 @@ h5 {
   margin-right: 10px;
 }
 .footer > a:nth-child(1):hover {
-  color: #bc2a8d;
+  color: rgb(204,24,30);
 }
+
 .footer > a:nth-child(2):hover {
   color: rgb(100, 65, 164);
 }
+
+.footer > a:nth-child(3):hover {
+  color: rgb(114,137,218);
+}
+
 @media only screen and (max-width: 596px) {
   .footer{
     justify-content: center;
